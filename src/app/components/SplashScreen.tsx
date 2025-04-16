@@ -82,7 +82,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
               initial={{ width: 0 }}
               animate={{ width: "80%" }}
               transition={{ duration: 2, delay: 0.5, ease: "easeInOut" }}
-              className="h-0.5 bg-gradient-to-r from-blue-600 via-primary to-purple-600 mt-6 rounded-full"
+              className="h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 mt-6 rounded-full"
             />
             
             <motion.p

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Code, Database, Layout, Settings } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Database, Layout, Settings, ShoppingCart } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Card, CardContent } from '@/app/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/app/components/ui/avatar';
@@ -9,6 +9,7 @@ import { Badge } from '@/app/components/ui/badge';
 import BentoGrid from './BentoGrid';
 import MusicPlayer from './MusicPlayer';
 import { Particles } from "@/components/magicui/particles";
+import { Icon } from '@iconify/react';
 
 // Skills with their respective icons
 const skillsWithIcons = {
@@ -20,6 +21,7 @@ const skillsWithIcons = {
     { name: 'C#', icon: "cs" },
     { name: 'PHP', icon: "php" },
     { name: 'HTML', icon: "html" },
+    { name: 'Koltin', icon: "kotlin" },
     { name: 'CSS', icon: "css" }
   ],
   'Frameworks & Libraries': [
@@ -29,7 +31,8 @@ const skillsWithIcons = {
     { name: 'Vite', icon: "vite" },
     { name: '.NET', icon: "dotnet" },
     { name: 'Discord.js', icon: "discordjs" },
-    { name: 'p5.js', icon: "p5js" }
+    { name: 'p5.js', icon: "p5js" },
+    { name: 'Tailwind CSS', icon: "tailwind" },
   ],
   'Databases': [
     { name: 'PostgreSQL', icon: "postgres" },
@@ -40,7 +43,10 @@ const skillsWithIcons = {
     { name: 'NPM', icon: "npm" },
     { name: 'Unity', icon: "unity" },
     { name: 'NGINX', icon: "nginx" },
-    { name: 'Linux', icon: "linux" }
+    { name: 'Linux', icon: "linux" },
+    { name: 'Git', icon: "git" },
+    { name: 'Qt', icon: "qt" },
+    { name: 'Ubuntu', icon: "ubuntu" },
   ]
 };
 
@@ -85,14 +91,25 @@ const BioSection: React.FC = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-2 text-gradient">kman</h1>
               <p className="text-lg text-muted-foreground mb-4">Software Developer & Designer</p>
               <div className="flex items-center gap-3 justify-center lg:justify-start">
-                <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10">
-                  <Github className="h-5 w-5" />
+                <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10" asChild>
+                  <a href="https://github.com/tnuser3" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-5 w-5" />
+                  </a>
                 </Button>
                 <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10">
-                  <Linkedin className="h-5 w-5" />
+                  <a href="https://github.com/tnuser3" target="_blank" rel="noopener noreferrer">
+                    <Icon icon="ic:baseline-discord" width="24" height="24" />
+                  </a>
                 </Button>
-                <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10">
-                  <Mail className="h-5 w-5" />
+                <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10" asChild>
+                  <a href="mailto:kmantnuser@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <Mail className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="outline" size="icon" className="rounded-full bg-secondary/30 hover:bg-secondary/50 border-white/10" asChild>
+                  <a href="https://t.me/wembydrc" target="_blank" rel="noopener noreferrer">
+                    <Icon icon="ic:baseline-telegram" width="24" height="24" />
+                  </a>
                 </Button>
               </div>
             </div>
