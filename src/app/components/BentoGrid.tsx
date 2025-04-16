@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { BentoCard, BentoGrid as Nigger } from '@/components/magicui/bento-grid';
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
 import { Hexagon } from "lucide-react";
 import { Icon } from "@iconify/react";
  
